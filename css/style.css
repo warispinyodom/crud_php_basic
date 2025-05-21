@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pridi", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+/* global */ 
+    body {
+        background: #FFF2F2;
+    }
+    a {
+        text-decoration: none;
+    }
+/* display prepare */
+    .display-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+/* card prepare */
+    .card {
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+/* form prepare */
+    .formgroup {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .formgroup input {
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+    .formgroup label {
+        position: absolute;
+        left: 15px;
+        top: 18px;
+        pointer-events: none;
+        color: #999;
+        transition: all 0.3s ease;
+    }
+    .formgroup input:focus + label,
+    .formgroup input:not(:placeholder-shown) + label {
+        transform: translateY(-25px);
+        background: #fff;
+        padding: 0 5px;
+        border-radius: 5px;
+        color: #A9B5DF;
+    }
+    .formgroup input:focus {
+        outline: none;
+        border-color: #7886C7;
+        box-shadow: 0 4px 10px #A9B5DF;
+    }
+/* button prepare */
+    .button-full {
+        width: 100%;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        background: #7886C7;
+        color: #fff;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+    .button-full:hover {
+        background: #2D336B;
+    }
+    .button {
+        background: #7886C7;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    .button:hover {
+        background: #2D336B;
+    }
+/* table */
+    table {
+        border: 1px solid #333;
+        width: 100%;
+    }
+/* ul li */
+    ul {
+
+    }
+    li {
+        list-style: none;
+    }
